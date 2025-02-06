@@ -84,6 +84,18 @@ Paso 4 Reensamblar: Volvemos a rearmar la computadora.
 ![Mi imagen](trifoliar1.jpg)
 ![Mi imagen](trifoliar2.jpg)
 
+
+![Mi imagen](1.PNG)
+![Mi imagen](2.PNG)
+![Mi imagen](3.PNG)
+![Mi imagen](4.PNG)
+![Mi imagen](5.PNG)
+![Mi imagen](6.PNG)
+
+
+
+
+
 [Ver el video en YouTube](https://youtu.be/LxWjA_7j39M)
 
 
