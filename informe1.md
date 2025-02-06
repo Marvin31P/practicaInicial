@@ -84,6 +84,6 @@ Paso 4 Reensamblar: Volvemos a rearmar la computadora.
 ![Mi imagen](trifoliar1.jpg)
 ![Mi imagen](trifoliar2.jpg)
 
-[Ver el video en YouTube](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[Ver el video en YouTube](https://youtu.be/LxWjA_7j39M)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+
