@@ -58,3 +58,28 @@ Los usuarios de Linux pueden acceder a una gran cantidad de recursos, como foros
 5. una vez editada dirigirse a la pagina web 
 
 ![Mi imagen](5.png)
+
+### **pasos para crear modificar archivos**
+
+1. se selecciona donde crear el archivo con cd 
+
+![Mi imagen](6.png)
+
+2. se crea el archivo con touch y nombre del archivo 
+
+![Mi imagen](7.png)
+
+3. para seleccionar el archivo se usa nano y nombre del archivo
+
+![Mi imagen](8.png)
+
+4. se edita el archivo y se guardan los cambios 
+
+![Mi imagen](9.png)
+
+![Mi imagen](10.png)
+
+5. para eliminar el archivo se usa rm 
+
+![Mi imagen](11.png)
+
