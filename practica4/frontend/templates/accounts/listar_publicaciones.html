@@ -1,15 +1,21 @@
 {% extends "base.html" %}
+
+{% block title %}Publicaciones{% endblock %}
+
 {% block content %}
 <h2>Lista de Publicaciones</h2>
-{% for publicacion in publicaciones %}
-    <div>
-        <h3>{{ publicacion.titulo }}</h3>
-        <p>{{ publicacion.contenido }}</p>
-        <small>Publicado por: {{ publicacion.usuario }}</small>
-    </div>
-    <hr>
-{% empty %}
+
+{% if publicaciones %}
+    <ul>
+        {% for publicacion in publicaciones %}
+            <li>
+                <h3>{{ publicacion.titulo }}</h3>
+                <p>{{ publicacion.contenido }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
     <p>No hay publicaciones aún.</p>
-{% endfor %}
-<a href="{% url 'crear_publicacion' %}">Crear Nueva Publicación</a>
+{% endif %}
+
 {% endblock %}

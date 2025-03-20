@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">  <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">  
     <style>
-        /* Estilo para la sección de formulario con barra de scroll */
+        
         .form-container {
-            max-height: 400px;  /* Ajusta la altura máxima */
-            overflow-y: auto;  /* Activa el scroll vertical cuando sea necesario */
+            max-height: 400px;  
+            overflow-y: auto;  
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 8px;
@@ -62,32 +62,32 @@
         <form method="POST">
             {% csrf_token %}
             
-            <!-- Campo de nombre completo -->
+          
             <label for="nombre">Nombre Completo:</label>
             <input type="text" id="nombre" name="nombre" required>
             <br><br>
 
-            <!-- Campo de carnet -->
+            
             <label for="carnet">Carnet de Identidad:</label>
             <input type="text" id="carnet" name="carnet" required>
             <br><br>
 
-            <!-- Campo de nombre de usuario -->
+           
             <label for="username">Usuario:</label>
             <input type="text" id="username" name="username" required>
             <br><br>
 
-            <!-- Campo de correo electrónico -->
+           
             <label for="email">Correo electrónico:</label>
             <input type="email" id="email" name="email" required>
             <br><br>
 
-            <!-- Campo de contraseña -->
+           
             <label for="password1">Contraseña:</label>
             <input type="password" id="password1" name="password1" required>
             <br><br>
 
-            <!-- Campo de confirmación de contraseña -->
+            
             <label for="password2">Confirmar contraseña:</label>
             <input type="password" id="password2" name="password2" required>
             <br><br>

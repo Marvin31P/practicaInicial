@@ -9,7 +9,7 @@
     <h1>Perfil de {{ user.first_name }} {{ user.last_name }}</h1>
     <p><strong>Nombre:</strong> {{ user.first_name }} {{ user.last_name }}</p>
     <p><strong>Correo electrónico:</strong> {{ user.email }}</p>
-    <p><strong>Carnet:</strong> {{ user.profile.carnet }}</p>  <!-- Asumiendo que 'carnet' es un campo adicional en el perfil del usuario -->
+    <p><strong>Carnet:</strong> {{ user.profile.carnet }}</p>  
 
     <a href="{% url 'home' %}">Volver a la página de inicio</a>
     <a href="{% url 'logout' %}">Cerrar sesión</a>
@@ -26,10 +26,10 @@
     <h1>Perfil de {{ user.first_name }} {{ user.last_name }}</h1>
     <p><strong>Nombre:</strong> {{ user.first_name }} {{ user.last_name }}</p>
     <p><strong>Correo electrónico:</strong> {{ user.email }}</p>
-    <p><strong>Carnet:</strong> {{ user.profile.carnet }}</p>  <!-- Asumiendo que 'carnet' es un campo adicional en el perfil del usuario -->
+    <p><strong>Carnet:</strong> {{ user.profile.carnet }}</p>  
 
     <a href="{% url 'home' %}">Volver a la página de inicio</a>
     <a href="{% url 'logout' %}">Cerrar sesión</a>
-    <a href="{% url 'crear_publicacion' %}">Crear Publicación</a> <!-- Nueva opción para crear publicaciones -->
+    <a href="{% url 'crear_publicacion' %}">Crear Publicación</a> 
 </body>
 </html>

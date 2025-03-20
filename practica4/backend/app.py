@@ -2,23 +2,24 @@ from flask import Flask, request, render_template, redirect, url_for, flash, jso
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Clave secreta para la sesión
+app.secret_key = 'your_secret_key'  
 
 login_manager = LoginManager()
 login_manager.init_app(app)
 
-# Simulamos una base de datos de usuarios en memoria
+
 users = {}
 
-# Simulamos una base de datos de publicaciones en memoria
+
 publicaciones = []
 
-# Clase para manejar el usuario
+
 class User(UserMixin):
     def __init__(self, username):
         self.id = username
 
-# Cargar un usuario por ID
+
+
 @login_manager.user_loader
 def load_user(user_id):
     if user_id in users:
@@ -92,12 +93,11 @@ def registro():
 
     return render_template('accounts/registro.html')
 
-### 🔹 **NUEVO ENDPOINT: CREAR PUBLICACIÓN**
 @app.route('/publicacion', methods=['POST'])
 @login_required
 def crear_publicacion():
     """Permite a los usuarios autenticados crear publicaciones"""
-    data = request.json  # Recibe datos en formato JSON
+    data = request.json  
     
     if not data or 'titulo' not in data or 'contenido' not in data:
         return jsonify({'error': 'Faltan datos'}), 400
@@ -112,7 +112,7 @@ def crear_publicacion():
 
     return jsonify({'mensaje': 'Publicación creada exitosamente', 'publicacion': nueva_publicacion}), 201
 
-### 🔹 **NUEVO ENDPOINT: LISTAR PUBLICACIONES**
+
 @app.route('/publicaciones', methods=['GET'])
 def listar_publicaciones():
     """Devuelve todas las publicaciones registradas"""
